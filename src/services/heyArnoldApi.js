@@ -10,7 +10,7 @@ export const fetchAllCartoons = async () => {
   return json;
 };
 
-export const fetchCartoonDetail = async (_id) => {
+export const fetchCartoonById = async (_id) => {
   //gets a specific character, by _id, as referenced in api nested array. validate in postman to ensure data returned
   //below route is the API route to grab the specific character, however we will adjust something... lets comment out line 13
   // const res = await fetch('https://hey-arnold-api.herokuapp.com/api/v1/characters/5da237699734fdcb7bef8f51');
