@@ -18,8 +18,7 @@ CartoonList.propTypes = {
   cartoons: PropTypes.arrayOf(
     PropTypes.shape({
       _id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      gifLink: PropTypes.string.isRequired,
     })
   ).isRequired
 };

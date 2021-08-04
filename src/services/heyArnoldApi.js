@@ -3,7 +3,7 @@
 /* eslint-disable max-len */
 export const fetchAllCartoons = async () => {
   // gets all characters, validate api in Postman to ensure all characters get returned
-  const res = await fetch('https://hey-arnold-api.herokuapp.com/api/v1/characters');
+  const res = await fetch('https://hey-arnold-api.herokuapp.com/api/v1/gifs');
   const json = await res.json();
   console.log(json);
 

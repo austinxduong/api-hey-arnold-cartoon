@@ -3,13 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const Cartoon = ({ name, image, _id }) => (
+const Cartoon = ({ gifLink, _id }) => (
   <Link to={`/${_id}`}>
 
     <figure>
-      <img src={image} alt={name} />
+      <img src={gifLink} alt={gifLink} />
       <figcaption>
-        <p>{name}</p>
+        <p>{gifLink}</p>
       </figcaption>
     </figure>
         
@@ -18,8 +18,7 @@ const Cartoon = ({ name, image, _id }) => (
 
 Cartoon.propTypes = {
   _id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  gifLink: PropTypes.string.isRequired,
 };
 
 export default Cartoon;
