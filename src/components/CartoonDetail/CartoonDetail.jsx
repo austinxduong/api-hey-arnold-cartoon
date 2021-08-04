@@ -6,6 +6,7 @@ const CartoonDetail = ({ gifLink, _id }) => {
 
   return (
     <>
+      <img src={gifLink} />
       <p>Actual Link to GIF: { gifLink }</p>
       <p>Actual ID from API: { _id } </p>
     </>
